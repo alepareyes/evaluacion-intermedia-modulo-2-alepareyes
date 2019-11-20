@@ -1,22 +1,41 @@
 'use strict';
 
-function getRandomNumber(max) {
-    return Math.ceil(Math.random() * max);
-}
-
 
 // ELEMENTOS CAMBIANTES E INTERACTIVOS
+const button = document.querySelector(".js-button");
+const input = document.querySelector('.js-number');
+const hint = document.querySelector(".js-hint");
+const numberOfTries = document.querySelector('.js-tries');
 
-const button = document.querySelector(".js-number");
+
+const getRandomNumber = function (max) {
+    console.log("Número random generado:");
+    return Math.ceil(Math.random() * max);
+};
+
+const randomNumber = getRandomNumber(100);
+console.log(randomNumber);
+
+function clickButton() {
+    console.log('click en prueba');
+};
 
 
-const input = document.querySelector('js-number');
+const algo = function () {
+    if (input.value === randomNumber) {
+        return hint.innerHTML = '¡Lo adivinaste!'
+    } else if (input.value > randomNumber) {
+        return hint.innerHTML = 'Demasiado alto'
+    } else if (input.value < randomNumber) {
+        return hint.innerHTML = 'Demasiado bajo...'
+    } else {
 
+    }
 
-const hint = document.querySelector("js-hint");
+};
 
-const numberoftries = document.querySelector('js-tries');
+/* click boton sobre formulario
+se refresca página
+prevent default; */
 
-function
-
-    button.addEventListener('click')
+button.addEventListener('click', algo);

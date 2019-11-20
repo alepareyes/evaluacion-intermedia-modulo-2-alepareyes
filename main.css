@@ -1,15 +1,13 @@
 .formulario {
     flex-direction: column;
-    border: #fabada solid;
     width: 50%;
     line-height : 25px;
     margin-bottom: 25px;
 }
 
 .button {
-
     display: inline-block;
-    background: #fabada;;
+    background: #fabada;
     margin-left: 10px;
     border-radius: 50%;
     padding: 5px;

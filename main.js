@@ -14,6 +14,7 @@ const getRandomNumber = function (max) {
 };
 
 const randomNumber = getRandomNumber(100);
+
 console.log(randomNumber);
 
 function clickButton() {
@@ -22,14 +23,12 @@ function clickButton() {
 
 
 const algo = function () {
-    if (input.value === randomNumber) {
+    if (parseInt(input.value) === randomNumber) {
         return hint.innerHTML = '¡Lo adivinaste!'
-    } else if (input.value > randomNumber) {
+    } else if (parseInt(input.value) > randomNumber) {
         return hint.innerHTML = 'Demasiado alto'
-    } else if (input.value < randomNumber) {
+    } else if (parseInt(input.value) < randomNumber) {
         return hint.innerHTML = 'Demasiado bajo...'
-    } else {
-
     }
 
 };

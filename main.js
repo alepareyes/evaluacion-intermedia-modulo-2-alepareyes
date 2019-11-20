@@ -33,8 +33,12 @@ const algo = function () {
 
 };
 
+const handlerEvent = function (ev) {
+    ev.preventDefault();
+    algo();
+}
 /* click boton sobre formulario
 se refresca página
 prevent default; */
 
-button.addEventListener('click', algo);
+button.addEventListener('click', handlerEvent);

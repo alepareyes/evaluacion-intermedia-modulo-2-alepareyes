@@ -10,16 +10,18 @@
 </head>
 
 <body>
-    <h1 class="title">¡Adivina el número!</h1>
-    <form class="formulario">
-        <label class="form-title">Introduce aquí tu número:</label>
-        <input class="js-number number" type="number" />
-        <button class="js-button button">Prueba</button>
-    </form>
-
-    <div class="js-hint hint"></div>
-    <div class="js-tries tries"></div>
-
+    <main class="content">
+        <h1 class="title">¡Adivina el número!</h1>
+        <form class="formulario">
+            <label class="form-title">Introduce aquí tu número:</label>
+            <input class="js-number number" type="number" />
+            <button class="js-button button">Prueba </button>
+        </form>
+        <section>
+            <p>Pista: <span class="js-hint hint">Escribe el número y dale a Prueba</span></p>
+            <p>Número de intentos: <span class="js-tries tries"> </span></p>
+        </section>
+    </main>
     <script src="main.js"></script>
 </body>
 

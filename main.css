@@ -1,21 +1,91 @@
-.content {
+.button {
+border-style: none;
+padding: 10px;
+border-radius: 50%;
+color: black;
+background: #FF8862;
+border-style: ;
+border: #F9F871 dotted;
+font-family: 'Amatic SC', cursive;
+font-size: 20px;
+width: 50%;
+}
+
+button:hover {
+background: #F9F871;
+transition: ease 2s;
+border: #FF8862 dotted;
+
+}
+
+.zoom {
+    font-size: 50px;
+}
+
+.hint {
+    text-decoration: underline #FF8862;
+    font-size: 20px;
+
+}
+.title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px; 
+    text-align: center;
+    margin: 0;
+}
+
+.sec1 {
+    background: #FF8862;
+    border-radius: 2%;
+    justify-content: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+    line-height: 0px;
+}
+
+.author {
+    font-weight: 100;
+    color: #FF8862;
+    padding: 0 0 50px 300px;
+    text-decoration: none;
+}
+
+.try {
+    margin-right: 0px;
+
+}
+
+.tries {
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+    padding: 10px;
+
+}
+
+
+.number {
+
+    border: #F9F871;
+    border-radius: 20px;
+    font-size: 25px;
+    color: rgb(253, 113, 67);
+    background: #F9F871;
+    width: 80px;
+    padding: 0 0 0 10px ;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(250,186,218,1) 0%, rgba(249,248,113,1) 100%);
+    box-sizing: border-box;
+    height: 100vh;
+    padding:0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Patrick Hand', cursive;
 }
-
-.formulario {
-    border: #fabada solid;
-    width: 50%;
-    line-height : 25px;
-    margin-bottom: 25px;
-}
-
-.button {
-    background: #fabada;
-    margin-left: 10px;
-    border-radius: 50%;
-    padding: 5px;
-}
-

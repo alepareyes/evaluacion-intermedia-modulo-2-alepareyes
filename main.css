@@ -4,7 +4,6 @@ padding: 10px;
 border-radius: 50%;
 color: black;
 background: #FF8862;
-border-style: ;
 border: #F9F871 dotted;
 font-family: 'Amatic SC', cursive;
 font-size: 20px;
@@ -18,13 +17,23 @@ border: #FF8862 dotted;
 
 }
 
-.zoom {
-    font-size: 50px;
+.reset {
+text-decoration: none;
+color: #FF8862;
+font-weight: 700;
+margin-right: 230px;
 }
 
+.subheader {
+    margin-bottom: 50px;
+    display: flex;
+}
 .hint {
     text-decoration: underline #FF8862;
     font-size: 20px;
+}
+.zoom {
+    font-size: 50px;
 
 }
 .title {
@@ -48,8 +57,8 @@ border: #FF8862 dotted;
 .author {
     font-weight: 100;
     color: #FF8862;
-    padding: 0 0 50px 300px;
     text-decoration: none;
+    margin-left: 300px;
 }
 
 .try {

@@ -45,6 +45,7 @@ const compareUserNumber = function () {
     } else if (inputNumberValue === randomNumber) {
         incCounter();
         hint.innerHTML = '¡Lo adivinaste!';
+        hint.classList.add('zoom');
     }
 }
 //////////////////////////////////////////////////////////

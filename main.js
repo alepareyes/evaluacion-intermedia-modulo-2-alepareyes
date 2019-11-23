@@ -36,19 +36,15 @@ const compareUserNumber = function () {
     const inputNumberValue = parseInt(input.value);
     if (inputNumberValue < 1 || inputNumberValue > 100) {
         hint.innerHTML = 'El número debe estar entre el 1 y 100';
-        hint.classList.remove('zoom');
     } else if (inputNumberValue > randomNumber) {
         incCounter();
         hint.innerHTML = 'Demasiado alto';
-        hint.classList.remove('zoom');
     } else if (inputNumberValue < randomNumber) {
         incCounter();
         hint.innerHTML = 'Demasiado bajo...';
-        hint.classList.remove('zoom');
     } else if (inputNumberValue === randomNumber) {
         incCounter();
         hint.innerHTML = '¡Lo adivinaste!';
-        hint.classList.add('zoom');
     }
 }
 //////////////////////////////////////////////////////////
